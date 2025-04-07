@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #109a1052;
     color: #333;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,11 +17,21 @@ body {
 }
 
 h1 {
-    color: #4caf50; /* Verde suave, associando com o ambiente veterinário */
-    font-size: 3.5rem;
+    color: #109a10;
+    font-family: "Aboreto";
+    font-size: 5rem;
     margin-bottom: 50px; 
-    height: 15%;
-    margin-left: 5%;
+    text-align: left;
+    padding-right: 18%;
+}
+
+#dog{
+    display: flex;
+}
+
+#pata{
+    width: 44px;
+    transform: rotate(-25deg);
 }
 
 form {
@@ -31,9 +41,6 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
-    position: absolute;
-    right: 200px;
-    top: 200px;
 }
 
 input[type="email"], input[type="password"] {
@@ -42,8 +49,7 @@ input[type="email"], input[type="password"] {
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    padding-top: 5%;
-    
+    margin-bottom: 15px; /* Adicionando um espaçamento entre os inputs */
 }
 
 input[type="email"]:focus, input[type="password"]:focus {
@@ -52,12 +58,12 @@ input[type="email"]:focus, input[type="password"]:focus {
 }
 
 button {
-    background-color: #4caf50; /* Botões em verde */
+    background-color: #4caf50;
     color: white;
     border: none;
     padding: 12px 20px;
     margin: 10px 5px;
-    width: 100%;
+    width: 44%;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -75,7 +81,7 @@ button:focus {
 #mensagem {
     margin-top: 20px;
     font-size: 1rem;
-    color: #e74c3c; /* Vermelho para mensagens de erro */
+    color: #e74c3c;
     text-align: center;
 }
 
@@ -89,4 +95,3 @@ body::before {
     width: 100px;
     height: auto;
 }
-
