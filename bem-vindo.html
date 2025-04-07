@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style2.css">
     <title>Bem-vindo</title>
 </head>
 <body>
 
     <h2 id="mensagem">Carregando...</h2>
+
+    <section class="card-servicos">
+        <div class="cards">
+                    <p><span>Nossos serviços</span> <br>
+                        Um ensaio de casamento é uma sessão de fotos pré ou pós-casamento,
+                        onde o casal é fotografado em trajes elegantes e cenários românticos,
+                        capturando momentos especiais e a essência do amor que compartilham.</p>
+
+                    <p><span></span> <br>
+                        Um ensaio newborn é uma sessão de fotos que captura os primeiros dias de
+                        vida de um bebê, geralmente realizado nos primeiros 15 dias após o nascimento,
+                        destacando a delicadeza e a pureza do recém-nascido em poses adoráveis.</p>
+
+                    <p><span>Ensaio LifeStyle</span> <br>
+                        Um ensaio lifestyle captura momentos autênticos do cotidiano, transmitindo a essência
+                        e o estilo de vida de uma pessoa ou família. As fotos podem ser em lugares significativos ou diários.
+                    </p>
+
+                    <p><span>Edição Fotográfica</span> <br>
+                        Edição fotográfica é o processo de aprimorar imagens digitais por meio de software para melhorar
+                        a qualidade visual e corrigir imperfeições. A edição contribui para tornar ainda mais evidente a
+                        mensagem que aquela imagem quer transmitir. 
+                    </p>
+            </div>        
+    </section>
 
     <button onclick="logout()">Sair</button>
 
@@ -17,7 +41,7 @@
         const usuarioEmail = localStorage.getItem("usuarioEmail");
 
         if (usuarioEmail) {
-            document.getElementById("mensagem").innerText = `Bem-vindo, ${usuarioEmail}!`;
+            document.getElementById("mensagem").innerText = `Bem-vindo a Viora Vet!`;
         } else {
             document.getElementById("mensagem").innerText = "Usuário não autenticado!";
         }
@@ -30,3 +54,4 @@
 
 </body>
 </html>
+
